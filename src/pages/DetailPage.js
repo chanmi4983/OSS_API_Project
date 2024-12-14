@@ -56,8 +56,8 @@ function DetailPage() {
           <p>이미지가 없습니다.</p>
         )}
       </ImageContainer>
-      <p><strong>주소:</strong> {artwork.RSTR_RDNMADR}</p>
-      <p><strong>업종:</strong> {artwork.BSNS_STATM_BZCND_NM}</p>
+      <p><strong>작품 상태태:</strong> {artwork.RSTR_RDNMADR}</p>
+      <p><strong>종류:</strong> {artwork.BSNS_STATM_BZCND_NM}</p>
       <p>{artwork.RSTR_INTRCN_CONT}</p>
 
       {/* 댓글 섹션 */}
