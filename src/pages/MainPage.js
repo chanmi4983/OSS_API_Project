@@ -1,19 +1,35 @@
-import React, { useState } from "react";
-import Restaurants from "../components/Restaurants";
-import SearchBar from "../components/SearchBar";
+// import React, { useState } from "react";
+// import ListPage from "./ListPage";
+// // import SearchBar from "../components/SearchBar";
+
+// function MainPage() {
+//   const [searchQuery, setSearchQuery] = useState("");
+
+//   // const handleSearchChange = (query) => {
+//   //   setSearchQuery(query);
+//   // };
+
+//   return (
+//     <div>
+//       <h1>GalleryNest</h1>
+//       {/* <SearchBar value={searchQuery} onChange={handleSearchChange} /> */}
+//       {/* <ListPage searchQuery={searchQuery} /> */}
+//     </div>
+//   );
+// }
+
+// export default MainPage;
+
+import React from "react";
+import ListPage from "./ListPage";
 
 function MainPage() {
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const handleSearchChange = (query) => {
-    setSearchQuery(query);
-  };
+  const searchQuery = ""; // setSearchQuery 제거
 
   return (
     <div>
       <h1>GalleryNest</h1>
-      <SearchBar value={searchQuery} onChange={handleSearchChange} />
-      <Restaurants searchQuery={searchQuery} />
+      <ListPage searchQuery={searchQuery} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-
+/* 
 @font-face {
     font-family: 'GangwonEduPowerExtraBoldA';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
@@ -14,4 +14,21 @@
     align-items: center;
     height: 100%;
     font-family: 'GangwonEduPowerExtraBoldA';
-}
+} */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+  }
+  

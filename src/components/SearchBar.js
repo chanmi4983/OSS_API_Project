@@ -1,29 +1,19 @@
 import React from "react";
-import styled from "styled-components";
+import "./SearchBar.css";
 
-function SearchBar({ value, onChange }) {
+function SearchBar({ searchQuery, onSearch }) {
   return (
-    <SearchWrapper>
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder="작품 제목, 작가, 키워드 검색..."
-      />
-    </SearchWrapper>
+    <input
+      type="text"
+      placeholder="검색어를 입력하세요"
+      value={searchQuery}
+      onChange={(e) => onSearch(e.target.value)}
+      className="search-input"
+    />
   );
 }
 
 export default SearchBar;
 
-const SearchWrapper = styled.div`
-  margin-bottom: 1rem;
 
-  input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-`;
+
